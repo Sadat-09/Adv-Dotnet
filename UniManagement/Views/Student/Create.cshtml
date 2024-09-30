@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Create</title>
+    <link href="/Content/bootstrap.css" rel="stylesheet" />
+    <link href="/Content/Site.css" rel="stylesheet" />
+    <script src="/Scripts/modernizr-2.8.3.js"></script>
+</head>
+<body>
+    <div class="container body-content">
+        <h2>Create</h2>
+        <form action="/Student/Create" method="post">
+            <input name="__RequestVerificationToken" type="hidden" value="YourAntiForgeryTokenHere" />
+            <div class="form-horizontal">
+                <h4>StudentDTO</h4>
+                <hr />
+                <div class="validation-summary-valid text-danger" data-valmsg-summary="true">
+                    <ul><li style="display:none"></li></ul>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="Name">Name</label>
+                    <div class="col-md-10">
+                        <input class="form-control" id="Name" name="Name" type="text" value="" />
+                        <span class="field-validation-valid text-danger" data-valmsg-for="Name" data-valmsg-replace="true"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="Address">Address</label>
+                    <div class="col-md-10">
+                        <input class="form-control" id="Address" name="Address" type="text" value="" />
+                        <span class="field-validation-valid text-danger" data-valmsg-for="Address" data-valmsg-replace="true"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="Phone">Phone</label>
+                    <div class="col-md-10">
+                        <input class="form-control" id="Phone" name="Phone" type="text" value="" />
+                        <span class="field-validation-valid text-danger" data-valmsg-for="Phone" data-valmsg-replace="true"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="Email">Email</label>
+                    <div class="col-md-10">
+                        <input class="form-control" id="Email" name="Email" type="text" value="" />
+                        <span class="field-validation-valid text-danger" data-valmsg-for="Email" data-valmsg-replace="true"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Create" class="btn btn-default" />
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div>
+            <a href="/Student/Index">Back to List</a>
+        </div>
+        <script src="/bundles/jqueryval"></script>
+    </div>
+</body>
+</html>
